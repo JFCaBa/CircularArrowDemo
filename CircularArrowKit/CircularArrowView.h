@@ -11,11 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 IB_DESIGNABLE
-@interface CircularArrowView : UIView <NSCoding>
+@interface CircularArrowView : UIView
 
 @property (nonatomic, strong) IBInspectable UIColor *fillColor;
 
-@property (nonatomic, strong) IBInspectable UIColor *strokeColor;
+@property (nonatomic, strong) IBInspectable UIColor *fullCircleColor;
 
 @property (nonatomic) IBInspectable CGFloat startAngle;
 
@@ -26,6 +26,8 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable CGFloat arrowWidth;
 
 @property (nonatomic) IBInspectable BOOL clockwise;
+
+@property (nonatomic) IBInspectable CGFloat headWidth;
 
 @end
 
